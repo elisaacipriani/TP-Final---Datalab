@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+
+    box-sizing: border-box;
+}
+
+@keyframes bajaTexto {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1, h2, body { margin: 10px;}
+
+header {
+    
+    padding-top: 5px;
+    height: 30vh;
+    background-color: white;
+    color: rgb(86, 35, 255);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    animation-name: bajaTexto;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+
+header a {
+
+background-color: white;
+color: rgb(86, 35, 255);
+border: 1px dashed rgb(189, 251, 123);
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+width: 150px;
+height: 30px;
+margin: auto;
+line-height: 30px;
+transition: all 3s;
+border-radius: 5px;
+
+}
+
+a:hover {
+background-color: rgb(198, 192, 225);
+border-color: rgb(86, 35, 255);
+color: rgb(189, 251, 123);
+
+
+}
+
+
+main {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 5px;
+}
+
+
+video { width: 60%;
+    display: block;
+    margin: 60px auto;
+}
+
+div {
+   
+    width: 30%;
+
+}
+
+img { width: 100%; }
+
+footer {
+    background-image: url("imagenes/fotofooter.png");
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    color: rgb(86, 35, 255);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    padding: 20px 10%;
+    margin-top: 20px;
+    border-top: 1px solid rgb(86, 35, 255);
+}
+
+footer a {
+    color: rgb(86, 35, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(189, 251, 123);
+}
